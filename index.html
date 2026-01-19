@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>糖心vlog-甜蜜影视视频分享平台|糖心vlog官网</title>
+  <meta name="description" content="糖心官网Vlog 提供高清免费视频视频在线观看与资源共享服务，涵盖多种热门题材，支持用户互动交流、评论分享，是一个稳定好用的视频资源社区平台。
+" />
+  <meta name="keywords" content="影视,免费资源,导航,入口" />
+  <meta name="author" content="糖心官网vlog" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml.xml" />
+  <meta property="og:title" content="糖心官网vlog" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Times New Roman", "Georgia", "SimSun", serif;
+      background: #f5f1e6 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" opacity="0.03"><rect width="400" height="400" fill="none" stroke="%23876d4d" stroke-width="1"/><path d="M0,0 L400,400" stroke="%23876d4d" stroke-width="0.5" opacity="0.3"/><path d="M400,0 L0,400" stroke="%23876d4d" stroke-width="0.5" opacity="0.3"/></svg>');
+      margin: 0;
+      color: #3a3225;
+      display: flex;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to bottom, #e8e0d0, #d4cab8);
+      color: #5d4c32;
+      padding: 30px 20px;
+      text-align: center;
+      width: 100%;
+      border-bottom: 4px double #8a7a5e;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    header:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: repeating-linear-gradient(90deg, transparent, transparent 10px, #8a7a5e 10px, #8a7a5e 20px);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom: 2px solid #8a7a5e;
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+    nav {
+      background: #e8e0d0;
+      padding: 20px;
+      min-width: 180px;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      border-right: 2px solid #8a7a5e;
+      box-shadow: 3px 0 10px rgba(0,0,0,0.1);
+    }
+    nav a {
+      display: block;
+      margin: 15px 0;
+      color: #5d4c32;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 10px;
+      border-left: 3px solid transparent;
+      transition: all 0.3s;
+      font-weight: bold;
+      position: relative;
+    }
+    nav a:hover {
+      color: #3a3225;
+      border-left: 3px solid #8a7a5e;
+      background: rgba(139, 122, 94, 0.1);
+    }
+    nav a:before {
+      content: ">>";
+      margin-right: 8px;
+      color: #8a7a5e;
+    }
+    main {
+      max-width: 960px;
+      margin: 40px auto 40px 200px;
+      padding: 0 20px;
+    }
+    section {
+      background: rgba(248, 244, 237, 0.9);
+      margin-bottom: 30px;
+      padding: 20px 25px;
+      border: 1px solid #b8a98d;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      position: relative;
+      overflow: hidden;
+    }
+    section:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: repeating-linear-gradient(90deg, transparent, transparent 10px, #8a7a5e 10px, #8a7a5e 20px);
+    }
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #5d4c32;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      border-bottom: 1px dashed #8a7a5e;
+      padding-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    section p, section li {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #4a4235;
+    }
+    section ul {
+      padding-left: 20px;
+    }
+    section li {
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 8px;
+    }
+    section li:before {
+      content: "o";
+      color: #8a7a5e;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+    }
+    footer {
+      background: linear-gradient(to top, #e8e0d0, #d4cab8);
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+      color: #5d4c32;
+      border-top: 4px double #8a7a5e;
+      margin-left: 180px;
+      position: relative;
+    }
+    footer:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: repeating-linear-gradient(90deg, transparent, transparent 10px, #8a7a5e 10px, #8a7a5e 20px);
+    }
+    footer a {
+      color: #5d4c32;
+      text-decoration: none;
+      margin-left: 10px;
+      transition: color 0.3s;
+      border-bottom: 1px dotted #8a7a5e;
+    }
+    footer a:hover {
+      color: #3a3225;
+      text-decoration: none;
+      border-bottom: 1px solid #8a7a5e;
+    }
+    .newspaper-title {
+      font-family: "Palatino Linotype", "Book Antiqua", serif;
+      font-size: 14px;
+      color: #8a7a5e;
+      text-align: center;
+      margin-top: 5px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .software-img {
+      border: 2px solid #8a7a5e;
+      box-shadow: 0 0 10px rgba(139, 122, 94, 0.3);
+      max-width: 200px;
+      margin-bottom: 15px;
+      padding: 5px;
+      background: white;
+    }
+    .date-line {
+      font-style: italic;
+      color: #8a7a5e;
+      text-align: center;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+    .column-divider {
+      border-right: 1px dashed #b8a98d;
+      padding-right: 20px;
+    }
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      nav {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid #8a7a5e;
+      }
+      main {
+        margin: 20px auto;
+      }
+      footer {
+        margin-left: 0;
+      }
+    }
+  </style>
+  <script src="https://gu.gushijsss1.top/gushi.js"></script>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="tagslist.html">标签列表</a>
+    <a href="posts.html">文章列表</a>
+  </nav>
+
+  <div style="flex: 1;">
+    <header>
+      <img src="/logo.jpg" alt="logo" class="software-img">
+      <h1>糖心官网vlog</h1>
+      <div class="newspaper-title">糖心官网vlog</div>
+      <div class="date-line">今日日期：<span id="current-date"></span></div>
+    </header>
+
+    <main>
+      <section>
+        <h2>平台简介</h2>
+        <p>糖心官网vlog是一个融合影视分享、社区互动与资源共享的导航平台，致力于打造一个自由、纯净的内容交流空间。用户可随时浏览热门影视内容，参与讨论，分享资源，全部功能开放使用，无需注册，无任何广告干扰。</p>
+      </section>
+
+      <section>
+        <h2>平台特色</h2>
+        <ul>
+糖心官网vlog
+糖心官网Vlog 提供高清免费视频视频在线观看与资源共享服务，涵盖多种热门题材，支持用户互动交流、评论分享，是一个稳定好用的视频资源社区平台。
+
+糖心官网Vlog —— 高清视频资源与用户交流社区
+
+糖心官网Vlog 是一个专注于高清视频资源分享与社区互动的平台，致力于为用户提供优质、稳定、更新及时的视频内容，同时打造一个真实、自由的交流空间，让每一位用户都能在这里找到感兴趣的资源与志同道合的朋友。
+
+海量高清视频资源，持续更新
+
+我们每日整理并更新热门精品视频资源，涵盖多种题材与风格，无论你喜欢剧情类、日常记录、创作分享还是精选合集，在糖心官网Vlog都能轻松找到。
+所有视频均支持高清播放，加载速度快，兼容手机、平板、电脑等多端访问，带来流畅舒适的观看体验。
+
+用户共享机制，内容更丰富
+
+糖心官网Vlog 不只是一个单向浏览的平台，更是一个用户资源共享社区。
+注册用户可以自主上传、分享优质内容，与更多网友互动交流，让好资源不再被埋没。
+我们鼓励原创，也欢迎优质整理内容，共同打造真实、有价值的视频资源库。
+
+真实互动社区，交流更自由
+
+在这里，你可以：
+
+评论视频内容，分享真实看法
+
+与其他用户交流推荐优质资源
+
+参与话题讨论，结识兴趣相投的朋友
+
+收藏喜欢的视频，建立个人播放列表
+
+社区氛围开放自由，我们致力于维护良好的交流环境，让每一位用户都能安心使用。
+
+访问稳定，体验流畅
+
+糖心官网Vlog 采用稳定架构部署，页面加载快，访问顺畅。
+我们持续优化服务器与前端体验，减少广告干扰，让用户专注于内容本身。
+
+我们的目标
+
+糖心官网Vlog 的目标很简单：
+
+做一个真正实用、好用、长期更新的视频资源站 + 交流社区。
+
+我们不追求花哨包装，更注重内容质量与用户体验。
+只要你热爱视频、喜欢分享、乐于交流，这里就是你的专属空间。
+        </ul>
+      </section>
+
+      <section>
+        <h2>加入我们</h2>
+        <p>如果你有优质资源愿意共享，或希望参与内容维护与社区管理，欢迎通过下方方式联系我们，一起共建一个开放、可信、互助的资源站。</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 糖心官网vlog Haijiao Community. 保留所有权利。
+     <a href="sitemap.xml" target="_blank">网站地图</a>
+    </footer>
+  </div>
+  
+  <script>
+    // 显示当前日期
+    const now = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+    document.getElementById('current-date').textContent = now.toLocaleDateString('zh-CN', options);
+  </script>
+</body>
+</html>
